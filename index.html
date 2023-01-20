@@ -159,16 +159,16 @@
             <div>
               <h2 class="right-text"><a name="how-to-get"></a>Расположение</h2>
               <hr />
-              <p>
+              <p style="margin-bottom: 2%;">
                 Яхт-клуб «Ладожский» расположен по адресу
                 <strong>г.Приозерск, ул. Заводская, д.1б</strong>
               </p>
+              <!-- Yandex map -->
               <div
                 id="ymaps-map-id_1358520171304822111863"
                 style="width: 100%; height: 450px; border: 1px"
               ></div>
               <div style="width: 600px; text-align: right"></div>
-              <!-- Yandex map -->
               <script type="text/javascript">
                 function fid_1358520171304822111863(e) {
                   var o = new e.Map("ymaps-map-id_1358520171304822111863", {
@@ -227,7 +227,7 @@
               <!-- end Yandex map -->
             </div>
 			<div class="d-none d-xxl-block">
-            <p style="margin-top: 2%">
+            <p style="margin-top: 2%; margin-bottom: 2%;">
               Карта захода в устье реки Вуокса из Ладоги с глубинами (нажмите для увеличения):
             </p>
             <a href="./img/fullmap.png" target="_blank"><img
@@ -276,7 +276,7 @@
           </div>
         </div>
         <!-- contact form -->
-
+<!-- 
         <div class="row align-items-center" style="padding: 0; margin: 0;">
           <div class="col-10 offset-1 col-xl-8 offset-xl-2" style="margin-top: 1%;"><p>Или же просто задайте свой вопрос заполнив форму:</p>
             <p>[[!FormIt? &hooks=`spam,email,emailUser,redirect`
@@ -291,15 +291,15 @@
             <form action="[[~[[*id]]]]" method="post">
                 <input type="hidden" name="nospam:blank" value=""/>
                 <div class="col-10 offset-1 col-xl-8 offset-xl-2" style="margin: 0;">
-                    <input type="text" name="name:required" id="name" value="[[+fi.name]]" placeholder="Имя"/>
+                    <p>Имя: <input type="text" name="name:required" id="name" value="[[+fi.name]]" placeholder="Имя"/></p>
                     <span>[[+fi.error.name]]</span>
                 </div>
                 <div class="col-10 offset-1 col-xl-8 offset-xl-2" style="margin: 0;">
-                    <input type="text" name="email:email:required" id="email" value="[[+fi.email]]" placeholder="Email"/>
+                    <p>Почта: <input type="text" name="email:email:required" id="email" value="[[+fi.email]]" placeholder="Почта"/></p>
                     <span>[[+fi.error.email]]</span>
                 </div>
                 <div class="col-10 offset-1 col-xl-8 offset-xl-2" style="margin: 0;">
-                    <input type="text" name="subject:required:stripTags" id="subject" value="[[+fi.subject]]" placeholder="Тема письма"/>
+                    <p>Тема: <input type="text" name="subject:required:stripTags" id="subject" value="[[+fi.subject]]" placeholder="Тема письма"/></p>
                     <span>[[+fi.error.subject]]</span>
                 </div>
                 <div class="col-10 offset-1 col-xl-8 offset-xl-2" style="margin: 0;">
@@ -312,7 +312,7 @@
             
             </form>
         </div>
-        </div>
+        </div> -->
         <!-- end form -->
         <div
             class="
