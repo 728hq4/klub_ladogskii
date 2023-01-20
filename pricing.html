@@ -1,0 +1,61 @@
+<!-- pricing -->
+<div class="container-fluid" style="padding: 0; margin-bottom: 2%;">
+	<div class="row align-items-center">
+		
+		<div class="d-none d-md-block 
+					col-md-4 offset-md-1 
+					col-xl-3 offset-xl-2
+					col-xxl-2">
+			<img src="./img/prices.png" class="img-fluid"/>
+		</div>
+
+		<div class="col-10 offset-1
+					col-md-6 offset-md-0
+					col-xl-5 offset-xl-0
+					col-xxl-6">
+		<div class="text-right">
+			<h2><a name='pricing'></a>Цены</h2>
+			<hr/>
+			<p>Рассчитайте стоимость стоянки для вашего судна прямо сейчас.</p>
+
+<!-- pricing form -->
+	<form name="get-price">
+		<div class="row justify-content-evenly">
+
+		<div class="container-fluid">
+		<select name="type">
+			<option value="" disabled selected>Тип стоянки</option>
+			<option value="on_water">На воде</option>
+			<option value="winter_parking">Зимовка</option>
+		</select>
+		
+		<select name="length">
+			<option value="" disabled selected>Длина Вашего судна</option>
+			<option value="55">До 5.5 метра</option>
+			<option value="70">От 5.5 до 7 метров</option>
+			<option value="80">От 7 до 8 метров</option>
+			<option value="90">От 8 до 9 метров</option>
+			<option value="120">От 9 до 12 метров</option>
+			<option value="140">От 12 до 14 метров</option>
+			<option value="170">От 14 до 17 метров</option>
+			<option value="190">От 17 до 19 метров</option>
+		</select>
+		
+		<select name="period">
+			<option value="" disabled selected>Срок стоянки</option>
+			<option value="day">Сутки</option>
+			<option value="month">Месяц</option>
+			<option value="half_year">6 месяцев</option>
+		</select>
+		
+		<input type="submit" value="Подсчитать">
+		</div>
+	</div>
+	</form>
+</div>
+</div>
+<!-- end form -->
+
+<div class="col-10 offset-1 offset-sm-2 offset-md-2 d-md-none">
+	<img src="./img/prices.png" class="img-fluid"/>
+</div>
